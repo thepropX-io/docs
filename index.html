@@ -29,6 +29,8 @@
           if (!request.headers['Authorization']) {
             request.headers['Authorization'] = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9remFma2pjeW9qaG1qcHB2emVwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjU0NDExNDQsImV4cCI6MjA0MTAxNzE0NH0.g3qfCBBC3ldivsx4h36F3myCEz_QtgTP3BBXR5JBUWE';
           }
+          request.headers['Accept-Profile']  = 'ai';
+          request.headers['Content-Profile'] = 'ai';
           return request;
         }
       })
